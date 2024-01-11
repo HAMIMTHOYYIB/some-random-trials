@@ -1,6 +1,12 @@
-alert("Hello welcome...");
-let name = prompt("what is your name"); 
-let delet = confirm("Do you want to delete");
+function startit() {
+    alert("Hello welcome...");
+    let namee = prompt("What is your name?");
+    let message = prompt("What do you want to say?");
+    let textElement = document.getElementById('text');
+    let messageElement = document.getElementById('message');
 
-let newname = name.toLowerCase();
-console.log(newname);
+    if (namee && message) {
+        textElement.innerText = "Hi " + namee ;
+        messageElement.innerText = "You said : " + message;
+    }
+}
