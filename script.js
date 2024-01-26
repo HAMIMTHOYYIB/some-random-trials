@@ -7,6 +7,6 @@ function startit() {
 
     if (namee && message) {
         textElement.innerText = " 'Hi " + namee +"'" ;
-        messageElement.innerText =  namee + "You said : " + message;
+        messageElement.innerText = "You said : " + message;
     }
 }
