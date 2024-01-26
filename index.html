@@ -3,12 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alert trys</title>
+    <title>Stylish Alerts</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 50vh;
+            margin-top: 30px;
+        }
+
+        #text {
+            margin: 0;
+            color: #333;
+            font-size: 2em;
+            background-color: #e0e0e0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        #messageBox {
+            padding: 30px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            background-color: #fff;
+            margin-top: auto; 
+        }
+
+        #message {
+            margin: 0;
+            color: #333;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+    </style>
+    <script src="script.js"></script>
 </head>
-<script src="script.js"></script>
 <body>
-    <h1 style="margin: auto; font-family: Arial, Helvetica, sans-serif;color: brown;" id="text">Hi</h1>
-    <b style="margin: auto;color: cadetblue;"><span id="message">nothing</span></b>
+    <div id="container">
+        <h1 id="text">Hi</h1>
+        <div id="messageBox">
+            <b id="message">nothing</b>
+        </div>
+    </div>
     <script>
         startit();
     </script>

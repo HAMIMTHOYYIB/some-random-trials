@@ -6,7 +6,7 @@ function startit() {
     let messageElement = document.getElementById('message');
 
     if (namee && message) {
-        textElement.innerText = "Hi " + namee ;
-        messageElement.innerText = "You said : " + message;
+        textElement.innerText = " 'Hi " + namee +"'" ;
+        messageElement.innerText =  namee + "You said : " + message;
     }
 }
