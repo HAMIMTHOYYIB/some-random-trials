@@ -12,4 +12,22 @@ function oddRow(n) {
     }
     return arr
 }
-console.log(oddRow(10));
+// console.log(oddRow(10));
+
+
+
+// another question.  in an array make of intigers change the elements which are 0 to the last and all other value as in the order without sorting
+function lastZero (Arr){
+    let a =[];
+    let b =[];
+    for(let i=0; i<Arr.length; i++){
+        if(Arr[i] === 0){
+            b.push(Arr[i])
+        }else{
+            a.push(Arr[i])
+        }
+    }
+    return a.concat(b)
+}
+let arr = [0,1,0,3,12]
+console.log(lastZero(arr));
