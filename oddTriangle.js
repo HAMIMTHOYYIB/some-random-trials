@@ -30,4 +30,14 @@ function lastZero (Arr){
     return a.concat(b)
 }
 let arr = [0,1,0,3,12]
-console.log(lastZero(arr));
+// console.log(lastZero(arr));
+
+
+function highestVal(num) {
+    let a = num.toString().split('').map(val => parseFloat(val))
+    console.log(a);
+    let b = a.sort((a,b) => b-a);
+    return b.join("");
+}
+let number = 1234567890656546 ;
+console.log(highestVal(number));
