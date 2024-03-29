@@ -34,10 +34,21 @@ let arr = [0,1,0,3,12]
 
 
 function highestVal(num) {
-    let a = num.toString().split('').map(val => parseFloat(val))
+    let a = num.toString().split('').map(Number)
     console.log(a);
     let b = a.sort((a,b) => b-a);
-    return b.join("");
+    return b.join('');
 }
 let number = 1234567890656546 ;
-console.log(highestVal(number));
+// console.log(highestVal(number));
+
+
+function tribonacci(arr,n) {
+    let neww = arr
+    for(let i=3; i<n ; i++){
+        neww.push(neww[i-1]+neww[i-2]+neww[i-3]);
+    }
+    return neww;
+}
+let ar = [1,2,3]
+console.log(tribonacci(ar,10));
